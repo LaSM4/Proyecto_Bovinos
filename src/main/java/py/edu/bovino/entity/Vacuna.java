@@ -17,7 +17,7 @@ public class Vacuna {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = false, length = 50)
+    @Column(nullable = false, length = 50)
     private String nombreVacuna;
 
     @Column

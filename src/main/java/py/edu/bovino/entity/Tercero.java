@@ -14,7 +14,7 @@ import lombok.Data;
 @Table(name = "tercero")
 @Data
 public class Tercero {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -31,7 +31,7 @@ public class Tercero {
     @Column(nullable = false, length = 25)
     private String telefono;
 
-    @Column(unique = false, length = 40)
+    @Column(length = 40, unique = true)
     private String mail;
 
     @Column(length = 50)
@@ -43,7 +43,7 @@ public class Tercero {
     @Column(length = 15)
     private String cargoPersonaContacto;
 
-    @Column(nullable = false, unique = false, length = 25)
+    @Column(nullable = false, length = 25)
     private String banco;
 
     @Column(length = 100)
@@ -60,7 +60,7 @@ public class Tercero {
     @Column(nullable = false, length = 25)
     private CondicionPago condicionPago;
 
-    @Column(nullable = true)
+    @Column
     private Integer diasCredito;
 
     @Column(nullable = false)

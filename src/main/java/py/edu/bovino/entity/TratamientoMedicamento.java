@@ -25,7 +25,7 @@ public class TratamientoMedicamento {
     @Column(nullable = false, length = 45)
     private String frecuencia;
 
-    @Column(nullable = false, length = 15)
+    @Column(nullable = false)
     private Integer duracionDias;
 
     @ManyToOne
